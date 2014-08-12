@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Страница помощи -->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<f:view>
+
+<head jsfc="h:head">
+    <title>Help page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body jsfc="h:body">
+
+<h1>Ahoy, people!</h1>
+<div>
+    <span jsfc="h:outputText" value="#{personBean.value}">number</span>
+    <br/>
+    <span jsfc="h:outputText" value="#{personBean}">baba</span>
+</div>
+<form jsfc="h:form">
+    <input type="text" jsfc="h:inputText" value="#{personBean.name}"/>
+    <br/>
+    <input type="submit" jsfc="h:commandButton" action="#{personBean.surprize}"
+        value="Surprize"/>
+</form>
+</body>
+
+</f:view>
+</html>
